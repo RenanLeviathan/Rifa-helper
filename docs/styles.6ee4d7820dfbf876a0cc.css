@@ -1,0 +1,1 @@
+*{margin:0;font-family:Montserrat}body{display:flex;flex:1;flex-direction:row;background-color:#b5bcf5;justify-content:center}app-root{max-width:500px}header{background:#f54045;min-height:50px;display:flex;flex:1;flex-direction:column;justify-content:center;color:#fff}header h2{padding-top:10px;margin-left:20px;text-align:center}header span{line-height:50px;padding-left:10px}

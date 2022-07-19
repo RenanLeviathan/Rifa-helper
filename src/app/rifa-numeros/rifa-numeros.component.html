@@ -1,0 +1,10 @@
+<div id="rifa-num-container">
+	<div *ngFor="let numero of nums">
+		<ng-template [ngIf]="numero.vendido" [ngIfElse]="disponivel">
+			<input type="button" name="numero" value="{{numero.numero}}" title="Vendido!!" disabled><!--Mostra os números não vendidos-->
+		</ng-template>
+		<ng-template #disponivel>
+			<input type="button" (click)="onSelect(numero)" name="numero" value="{{numero.numero}}">
+		</ng-template>
+	</div>
+</div>

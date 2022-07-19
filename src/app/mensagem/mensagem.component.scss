@@ -1,0 +1,11 @@
+button{
+	width: 200px;
+	height: 25px;
+	border-radius: 15px;
+	border: none;
+	background: #bf0f1a;
+	&:hover{
+		background: #ff2b39;
+	}
+	color: #fff;
+}

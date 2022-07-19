@@ -1,0 +1,31 @@
+@use '../../tema';
+div {
+  max-width: 500px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: 1;
+  label {
+    justify-content: center;
+    width: auto;
+    height: 25px;
+  }
+  input,
+  button {
+    justify-content: center;
+    width: auto;
+    border-radius: 15px;
+    border: none;
+    &:focus {
+      box-shadow: 1px 1px 1px #69ffc8;
+    }
+    padding: 2px 10px 2px 10px;
+    height: 25px;
+    margin-bottom: 1px;
+  }
+  button {
+    background-color: tema.$btncomprarbg;
+    color: tema.$btncomprarcolor;
+  }
+}

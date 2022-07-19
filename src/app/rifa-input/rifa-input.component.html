@@ -1,0 +1,15 @@
+<div>
+  <label for="nomeComprador">Nome:</label
+  ><input type="text" name="nomeComprador" />
+  <label for="telefone">Telefone:</label
+  ><input
+    type="tel"
+    pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}"
+    name="telefone"
+    placeholder="(00) 00000-0000"
+  />
+  <app-rifa-numeros></app-rifa-numeros>
+  <button name="comprar" (click)="onSelect(nomeComprador, telefone)">
+    Comprar
+  </button>
+</div>
