@@ -26,9 +26,8 @@ export class MensagemService {
         '\nNúmeros: ' +
         this.mensagens
     );
-    let count = this.numeros.length * 6.0;
     window.open(
-      `http://api.whatsapp.com/send?1=pt_BR&phone=5511959668971&text=${this.mensagens}\nTotal: R$ ${count}`
+      `http://api.whatsapp.com/send?1=pt_BR&phone=5511959668971&text=Números selecionados: ${this.numeros}`
     );
   }
 
