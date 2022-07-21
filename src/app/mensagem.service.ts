@@ -18,16 +18,15 @@ export class MensagemService {
   }
 
   registraCompra(nome: string, telefone: string) {
+    let nums = '';
+    for (let n of this.numeros) {
+      nums.concat(n);
+    }
     this.order.concat(
-      'Nome: ' +
-        nome +
-        ' Telefone: ' +
-        telefone +
-        '\nNúmeros: ' +
-        this.numeros
+      'Nome: ' + nome + ' Telefone: ' + telefone + '\nNúmeros: ' + nums
     );
     window.open(
-      `http://api.whatsapp.com/send?1=pt_BR&phone=5511959668971&text=Números selecionados: ${this.numeros}`
+      `http://api.whatsapp.com/send?1=pt_BR&phone=5511959668971&text=Números selecionados: ${this.order}`
     );
   }
 
