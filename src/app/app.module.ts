@@ -8,20 +8,22 @@ import { AppComponent } from './app.component';
 import { RifaInputComponent } from './rifa-input/rifa-input.component';
 import { RifaNumerosComponent } from './rifa-numeros/rifa-numeros.component';
 import { MensagemComponent } from './mensagem/mensagem.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     RifaInputComponent,
     RifaNumerosComponent,
-    MensagemComponent
+    MensagemComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
