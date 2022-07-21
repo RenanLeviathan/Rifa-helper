@@ -24,7 +24,7 @@ export class MensagemService {
         ' Telefone: ' +
         telefone +
         '\nNúmeros: ' +
-        this.mensagens
+        this.numeros
     );
     window.open(
       `http://api.whatsapp.com/send?1=pt_BR&phone=5511959668971&text=Números selecionados: ${this.numeros}`
