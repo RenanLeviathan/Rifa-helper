@@ -21,7 +21,7 @@ export class MensagemService {
     let nums = 'Dados do pedido:\n--------------------\n';
     let total = this.numeros.length * 6.0; //total da compra
     for (let n of this.numeros) {
-      nums = nums.concat(n, ' ');
+      nums = nums.concat(`\nNúmero selecionado: ${n} --------------R$ 6,00`);
     }
     this.order = this.order.concat(
       'Nome: ' + nome + ' Telefone: ' + telefone + '\nNúmeros: ' + nums
